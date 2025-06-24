@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    background-image: url(../images/image-profile-desktop.webp);
+    /* background-image: url(../images/image-profile-desktop.webp); */
     background-size: 445px 720px;
     background-repeat: no-repeat;
     background-position: top right;
@@ -45,7 +45,7 @@ header>div {
 
 }
 
-header>div span {
+header>div span, footer span {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -0.4px;
@@ -53,7 +53,7 @@ header>div span {
 }
 
 header>div nav {
-    width: 192px;
+    column-gap: 24px;
     display: flex;
     justify-content: space-between;
     margin-right: 20px;
@@ -276,11 +276,11 @@ main {
 }
 
 .projects article:nth-child(3) {
-    background-image: url(../images/llll.jpg);
+    background-image: url(../images/insights.png);
 }
 
 .projects article:nth-child(4) {
-    background-image: url(../images/huddle1.jpg);
+    background-image: url(../images/huddle.png);
 }
 
 .projects article:nth-child(5) {
@@ -292,7 +292,7 @@ main {
 }
 
 .projects article:nth-child(7) {
-    background-image: url(../images/recepie.jpg);
+    background-image: url(../images/recepie.png);
 }
 
 .projects article:nth-child(8) {
@@ -312,7 +312,7 @@ main {
 }
 
 .projects article:nth-child(12) {
-    background-image: url(../images/nft1.jpg);
+    background-image: url(../images/nft.jpg);
 }
 
 .links {
@@ -366,7 +366,7 @@ form {
 
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact h2 {
@@ -377,13 +377,17 @@ form {
     margin-bottom: 36px;
 }
 
-.contact p {
+.contact address{
     font-size: 18px;
     line-height: 28px;
     color: #D9D9D9;
     max-width: 445px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
 }
-
 .contact input {
     font-size: 16px;
     line-height: 26px;
@@ -449,7 +453,7 @@ textarea::placeholder {
     display: block;
 }
 
-.contact button:hover {
+.contact button:hover,.projects a:hover {
     color: #4EE1A0;
 }
 
